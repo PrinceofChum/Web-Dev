@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container{
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      grid-gap: 9px;
+      background-color: #000;
+      height: 748px;
+      width: 748px;
+    }
+    
+    .box1{
+      background-color: #E72F24;
+    }
+    .box2{
+      background-color: #F0F1EC;
+      grid-column: span 3;
+      
+    }
+    .box3{
+      background-color: #F0F1EC;
+      grid-area: 2 / 2 / 4 / 4;
+      
+    }
+    .box4{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+  
+    }
+    .box5{
+      background-color: #004592;
+      margin-bottom: 10px;
+    }
+    .box6{
+      background-color: #F0F1EC;
+      grid-area: 4 / 1 / 5 / 2;
+      
+    }
+    .box7{
+      background-color: #F9D01E;
+      grid-column: 2 ;
+    }
+    .box8{
+      background-color: #232629;
+    }
+    .box9{
+      background-color: #F0F1EC;
+      grid-area: 3 / 4 / 5 / 5;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="all box1"></div>
+    <div class="all box2"></div>
+    <div class="all box3"></div>
+    <div class="all box4"> </div>
+    <div class="all box5"></div>
+    <div class="all box6"></div>
+    <div class="all box7"></div>
+    <div class="all box8"></div>
+    <div class="all box9"></div>
+  </div>
+</body>
+
+</html>
